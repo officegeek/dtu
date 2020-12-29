@@ -1,0 +1,266 @@
+######################## default configuration ####################
+baseURL = "https://github.com/officegeek.io/dtu"
+title = "DTU - IT i produktionen"
+theme = "godocs-4"
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# disable language
+disableLanguages = [] # desable language from here
+
+# hugo outputs
+[outputs]
+home = [ "HTML", "JSON"]
+
+# render unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+attributes = "media='screen'"
+page = "/"
+
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+attributes = ""
+page = "/"
+
+[[params.plugins.css]]
+link = "plugins/search/auto-complete.css"
+attributes = ""
+page = "/"
+
+[[params.plugins.css]]
+link = "plugins/featherlight/featherlight.min.css"
+attributes = ""
+page = "/"
+
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+attributes = ""
+page = "/"
+
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+attributes = ""
+page = "/"
+
+[[params.plugins.js]]
+link = "plugins/turbolinks/turbolinks.js"
+attributes = ""
+page = "/"
+
+[[params.plugins.js]]
+link = "plugins/masonry/masonry.min.js"
+attributes = ""
+page = "/"
+
+[[params.plugins.js]]
+link = "plugins/featherlight/featherlight.min.js"
+attributes = ""
+page = "/"
+
+[[params.plugins.js]]
+link = "plugins/clipboard/clipboard.min.js"
+attributes = ""
+page = "/"
+
+[[params.plugins.js]]
+link = "plugins/search/auto-complete.js"
+attributes = ""
+page = "/"
+
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+attributes = ""
+page = "/"
+
+[[params.plugins.js]]
+link = "plugins/search/lunr.min.js"
+attributes = ""
+page = "/"
+
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+attributes = ""
+page = "search/"
+
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+attributes = ""
+page = "search/"
+
+[[params.plugins.js]]
+link = "plugins/search/search-page.js"
+attributes = ""
+page = "search/"
+
+
+
+############## English navigation ###############
+
+[[Languages.en.menu.footer]]
+name = "Changelog"
+url = "changelog"
+weight = 1
+
+[[Languages.en.menu.footer]]
+name = "contact"
+url = "contact"
+weight = 2
+
+[[Languages.en.menu.footer]]
+name = "Github"
+url = "https://github.com/themefisher/"
+weight = 3
+
+
+############## French navigation ###############
+
+[[Languages.fr.menu.footer]]
+name = "Changelog"
+url = "changelog"
+weight = 1
+
+[[Languages.fr.menu.footer]]
+name = "contact"
+url = "contact"
+weight = 2
+
+[[Languages.fr.menu.footer]]
+name = "Github"
+url = "https://github.com/themefisher/"
+weight = 3
+
+
+#################### default parameters ################################
+[params]
+# meta description
+author = "Themefisher"
+description = "This is meta description"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# feedback form action
+feedback_form_action = "#" # contact form works with https://formspree.io
+
+# logo
+[params.logo]
+main = "images/logo.png"
+main_site_link = "https://examplesite.org"
+logo_icon = "images/logo-icon.png"
+site_logo = "images/site-logo.png"
+docs_logo = "images/docs-logo.png"
+
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+[[params.nav_button]]
+style = "outline" # available style: solid, outline
+label = "changelog"
+link = "changelog"
+
+[[params.nav_button]]
+style = "solid" # available style: solid, outline
+label = "contact"
+link = "contact"
+
+
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+title = "github"
+icon = "ti-github" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+title = "linkedin"
+icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+weight = 1
+# copyright
+copyright = "Copyright &copy; Designed by [themefisher](https://themefisher.com) & Developed by [gethugothemes](https://gethugothemes.com)"
+
+# banner
+[Languages.en.banner]
+title = "Documentation Theme By Themefisher Team"
+subtitle = "Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua At."
+image = "images/banner.jpg"
+
+# feedback
+[Languages.en.feedback]
+title = "Did you find this doc useful?"
+content = "Your feedback helps us improve our docs."
+positive_placeholder = "What did you like about this doc?"
+negative_placeholder = "What can we improve in this doc?"
+
+# call to action
+[Languages.en.call_to_action]
+enable = true
+title = "Still Didn't Find Your Answer?"
+image = "images/cta-illustration.jpg"
+content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+
+  # call to action button
+  [Languages.en.call_to_action.button]
+  enable = "true"
+  label = "Submit a ticket"
+  link = "contact"
+
+
+################################### French language #####################################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+weight = 2
+# copyright
+copyright = "Copyright et copie; Conçu par [themefisher](https://themefisher.com) & développé par [gethugothemes](https://gethugothemes.com)"
+
+# banner
+[Languages.fr.banner]
+title = "Thème de documentation par l'équipe Themefisher"
+subtitle = "Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua At."
+image = "images/banner.jpg"
+
+# feedback
+[Languages.fr.feedback]
+title = "Avez-vous trouvé ce document utile?"
+content = "Vos commentaires nous aident à améliorer nos documents."
+positive_placeholder = "Qu'avez-vous aimé dans ce document?"
+negative_placeholder = "Que pouvons-nous améliorer dans ce document?"
+
+# call to action
+[Languages.fr.call_to_action]
+enable = true
+title = "Vous n'avez toujours pas trouvé votre réponse?"
+image = "images/cta-illustration.jpg"
+content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+
+  # call to action button
+  [Languages.fr.call_to_action.button]
+  enable = "true"
+  label = "Soumettre un ticket"
+  link = "contact"
