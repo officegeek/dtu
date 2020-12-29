@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://github.com/officegeek.io/dtu"
+baseURL = "https://officegeek.github.io/dtu/"
 title = "DTU - IT i produktionen"
 theme = "godocs-4"
 # google analytics
